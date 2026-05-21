@@ -137,7 +137,7 @@ graph LR
 
 ## 3. README Template
 
-```markdown
+````markdown
 # <Project Name>
 
 Brief: One-liner about what this does.
@@ -179,7 +179,7 @@ open http://localhost:3000
 
 ## License
 []
-```
+````
 
 ---
 
