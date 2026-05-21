@@ -1,0 +1,131 @@
+/* ============================================
+   Claude Mastery — Extra Styles
+   ============================================ */
+
+/* Better Thai typography */
+:root {
+  --md-text-font: "Sarabun", "Noto Sans Thai", -apple-system, BlinkMacSystemFont, sans-serif;
+  --md-code-font: "JetBrains Mono", "Fira Code", monospace;
+}
+
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+/* Headings spacing for Thai */
+.md-typeset h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Custom admonition: "Real-world example" */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: #7e57c2;
+}
+
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(126, 87, 194, 0.1);
+}
+
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before {
+  background-color: #7e57c2;
+  -webkit-mask-image: var(--md-admonition-icon--example);
+          mask-image: var(--md-admonition-icon--example);
+}
+
+/* Lesson meta box */
+.lesson-meta {
+  background: var(--md-default-bg-color--light, #f5f5f5);
+  border-left: 4px solid #7e57c2;
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+.lesson-meta strong {
+  color: #7e57c2;
+}
+
+/* Checklist (objectives) */
+.md-typeset ul.objectives {
+  list-style: none;
+  padding-left: 0;
+}
+
+.md-typeset ul.objectives li {
+  padding-left: 1.75rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset ul.objectives li::before {
+  content: "🎯";
+  position: absolute;
+  left: 0;
+}
+
+/* Quiz box */
+.quiz {
+  background: linear-gradient(135deg, rgba(126, 87, 194, 0.05), rgba(103, 58, 183, 0.05));
+  border: 1px solid rgba(126, 87, 194, 0.3);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.quiz h3 {
+  margin-top: 0;
+  color: #7e57c2;
+}
+
+/* Code block — better readability */
+.md-typeset pre > code {
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* Table — center small tables */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+}
+
+/* Mermaid diagrams — center */
+.md-typeset .mermaid {
+  text-align: center;
+}
+
+/* Tags */
+.md-typeset .tag {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  background: rgba(126, 87, 194, 0.15);
+  color: #7e57c2;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .lesson-meta {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="slate"] .quiz {
+  background: rgba(126, 87, 194, 0.1);
+}

@@ -1,0 +1,271 @@
+site_name: Claude Mastery — Solution Architect Edition (4-month)
+site_description: หลักสูตรเรียน Claude AI 120 วัน สำหรับ Solution Architects และ Senior Engineers
+site_author: Claude Mastery Course
+site_url: https://audomsak.github.io/claude-mastery/
+repo_url: https://github.com/audomsak/claude-mastery
+repo_name: audomsak/claude-mastery
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Claude Mastery — Released under MIT License
+
+theme:
+  name: material
+  language: th
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: สลับเป็นโหมดมืด
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: สลับเป็นโหมดสว่าง
+  font:
+    text: Sarabun
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search:
+      lang:
+        - th
+        - en
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - หน้าแรก: index.md
+  - ภาพรวมหลักสูตร: curriculum.md
+  - เตรียมตัวก่อนเริ่ม: setup.md
+  - 'Month 1 — Foundation':
+    - 'Week 1 — Claude พื้นฐาน':
+      - week-01/index.md
+      - 'Day 1: AI และ LLM คืออะไร': week-01/day-01.md
+      - 'Day 2: เริ่มต้นกับ Claude.ai': week-01/day-02.md
+      - 'Day 3: Prompting 101': week-01/day-03.md
+      - 'Day 4: Projects, Artifacts, Memory': week-01/day-04.md
+      - 'Day 5: Advanced Prompting': week-01/day-05.md
+      - 'Day 6: ทำงานกับ Multimodal': week-01/day-06.md
+      - 'Day 7: Mini Project': week-01/day-07.md
+    - 'Week 2 — Applied Claude':
+      - week-02/index.md
+      - 'Day 8: Writing Workflows': week-02/day-08.md
+      - 'Day 9: Data Analysis': week-02/day-09.md
+      - 'Day 10: Coding บน Claude.ai': week-02/day-10.md
+      - 'Day 11: Claude API': week-02/day-11.md
+      - 'Day 12: แอปแรกด้วย API': week-02/day-12.md
+      - 'Day 13: Claude Cowork': week-02/day-13.md
+      - 'Day 14: Mini Project': week-02/day-14.md
+    - 'Week 3 — Developer Tools':
+      - week-03/index.md
+      - 'Day 15: Claude Code': week-03/day-15.md
+      - 'Day 16: Claude Code ขั้นสูง': week-03/day-16.md
+      - 'Day 17: Subagents': week-03/day-17.md
+      - 'Day 18: MCP คืออะไร': week-03/day-18.md
+      - 'Day 19: ใช้ MCP Servers': week-03/day-19.md
+      - 'Day 20: สร้าง MCP Server': week-03/day-20.md
+      - 'Day 21: Mini Project': week-03/day-21.md
+    - 'Week 4 — Agents & Capstone':
+      - week-04/index.md
+      - 'Day 22: Agent Architecture': week-04/day-22.md
+      - 'Day 23: สร้าง Agent แรก': week-04/day-23.md
+      - 'Day 24: Multi-Agent / A2A': week-04/day-24.md
+      - 'Day 25: Chrome & Excel': week-04/day-25.md
+      - 'Day 26: Claude Design': week-04/day-26.md
+      - 'Day 27: Security & Cost': week-04/day-27.md
+      - 'Day 28-30: Capstone Project': week-04/day-28-30.md
+  - 'Month 2 — Enterprise AI Engineering':
+    - 'Week 5 — RAG Fundamentals':
+      - week-05/index.md
+      - 'Day 31: ทำไมต้อง RAG': week-05/day-31.md
+      - 'Day 32: Embeddings ลึก': week-05/day-32.md
+      - 'Day 33: Vector Databases': week-05/day-33.md
+      - 'Day 34: Chunking Strategies': week-05/day-34.md
+      - 'Day 35: Basic RAG Pipeline': week-05/day-35.md
+      - 'Day 36: Citation & Grounding': week-05/day-36.md
+      - 'Day 37: Mini Project — Wiki Q&A': week-05/day-37.md
+    - 'Week 6 — Advanced RAG':
+      - week-06/index.md
+      - 'Day 38: Hybrid Search': week-06/day-38.md
+      - 'Day 39: Re-ranking': week-06/day-39.md
+      - 'Day 40: Query Transformation': week-06/day-40.md
+      - 'Day 41: Knowledge Graphs + Neo4j': week-06/day-41.md
+      - 'Day 42: GraphRAG': week-06/day-42.md
+      - 'Day 43: Agentic RAG': week-06/day-43.md
+      - 'Day 44: Mini Project — Graph+Vector': week-06/day-44.md
+    - 'Week 7 — Frameworks Ecosystem':
+      - week-07/index.md
+      - 'Day 45: Why Frameworks?': week-07/day-45.md
+      - 'Day 46: LangChain': week-07/day-46.md
+      - 'Day 47: LangGraph': week-07/day-47.md
+      - 'Day 48: LlamaIndex': week-07/day-48.md
+      - 'Day 49: DSPy': week-07/day-49.md
+      - 'Day 50: Pydantic + Structured Outputs': week-07/day-50.md
+      - 'Day 51: Framework Decision': week-07/day-51.md
+    - 'Week 8 — Claude on Cloud':
+      - week-08/index.md
+      - 'Day 52: Cloud Architecture Options': week-08/day-52.md
+      - 'Day 53: AWS Bedrock Setup': week-08/day-53.md
+      - 'Day 54: Bedrock Knowledge Bases & Agents': week-08/day-54.md
+      - 'Day 55: Bedrock Production Patterns': week-08/day-55.md
+      - 'Day 56: Google Vertex AI': week-08/day-56.md
+      - 'Day 57: Vertex Agent Builder': week-08/day-57.md
+      - 'Day 58: Microsoft Foundry (Azure)': week-08/day-58.md
+      - 'Day 59: Multi-cloud & Compliance': week-08/day-59.md
+      - 'Day 60: Mini Project — Multi-cloud': week-08/day-60.md
+  - 'Month 3 — Production & Specialization':
+    - 'Week 9 — Advanced Agents':
+      - week-09/index.md
+      - 'Day 61: Computer Use API': week-09/day-61.md
+      - 'Day 62: Sandboxed Code Execution': week-09/day-62.md
+      - 'Day 63: Agent Skills': week-09/day-63.md
+      - 'Day 64: Browser Agents (Playwright+Claude)': week-09/day-64.md
+      - 'Day 65: Voice Agents': week-09/day-65.md
+      - 'Day 66: Document AI / OCR': week-09/day-66.md
+      - 'Day 67: Spec-Driven Development': week-09/day-67.md
+    - 'Week 10 — Multi-Agent Frameworks':
+      - week-10/index.md
+      - 'Day 68: CrewAI': week-10/day-68.md
+      - 'Day 69: LangGraph Multi-Agent': week-10/day-69.md
+      - 'Day 70: AutoGen': week-10/day-70.md
+      - 'Day 71: Agent Memory Deep': week-10/day-71.md
+      - 'Day 72: Long-term Memory (LangMem/Letta)': week-10/day-72.md
+      - 'Day 73: A2A Protocol Deep': week-10/day-73.md
+      - 'Day 74: Mini Project — Multi-Framework': week-10/day-74.md
+    - 'Week 11 — LLMOps':
+      - week-11/index.md
+      - 'Day 75: Observability Stack': week-11/day-75.md
+      - 'Day 76: Eval Deep (Ragas/DeepEval)': week-11/day-76.md
+      - 'Day 77: CI/CD for LLM Apps': week-11/day-77.md
+      - 'Day 78: Red Teaming': week-11/day-78.md
+      - 'Day 79: Guardrails': week-11/day-79.md
+      - 'Day 80: Cost Optimization Deep': week-11/day-80.md
+      - 'Day 81: Production Runbook': week-11/day-81.md
+    - 'Week 12 — Enterprise Capstone':
+      - week-12/index.md
+      - 'Day 82: Capstone Design Phase 1': week-12/day-82.md
+      - 'Day 83: Capstone Design Phase 2': week-12/day-83.md
+      - 'Day 84: Build — RAG Core': week-12/day-84.md
+      - 'Day 85: Build — Agent Layer': week-12/day-85.md
+      - 'Day 86: Build — UI + Auth': week-12/day-86.md
+      - 'Day 87: Deploy — Cloud + IaC': week-12/day-87.md
+      - 'Day 88: Observability + Eval CI': week-12/day-88.md
+      - 'Day 89: Red Team + Security Audit': week-12/day-89.md
+      - 'Day 90: Final Demo + FAD': week-12/day-90.md
+  - 'Month 4 — Specialization & Mastery':
+    - 'Week 13 — Voice + Document AI':
+      - week-13/index.md
+      - 'Day 91: LiveKit Agents — Production Voice': week-13/day-91.md
+      - 'Day 92: Google ADK (Agent Development Kit)': week-13/day-92.md
+      - 'Day 93: Voice Production Patterns': week-13/day-93.md
+      - 'Day 94: Agentic Document Extraction': week-13/day-94.md
+      - 'Day 95: Tables, Forms & Key-Value': week-13/day-95.md
+      - 'Day 96: Charts, Diagrams & Multi-Modal': week-13/day-96.md
+      - 'Day 97: Mini-Project — Voice + Doc': week-13/day-97.md
+    - 'Week 14 — Compliance & Governance':
+      - week-14/index.md
+      - 'Day 98: NIST AI Risk Management Framework': week-14/day-98.md
+      - 'Day 99: EU AI Act + ISO 42001': week-14/day-99.md
+      - 'Day 100: PDPA Thailand + GDPR for AI': week-14/day-100.md
+      - 'Day 101: HIPAA + Sector-Specific Regulations': week-14/day-101.md
+      - 'Day 102: Carbon Footprint of AI': week-14/day-102.md
+      - 'Day 103: Green AI Patterns': week-14/day-103.md
+      - 'Day 104: Compliance Audit Template': week-14/day-104.md
+    - 'Week 15 — Vertical Use Cases':
+      - week-15/index.md
+      - 'Day 105: Customer Support AI': week-15/day-105.md
+      - 'Day 106: Coding Agents Enterprise': week-15/day-106.md
+      - 'Day 107: Legal AI Patterns': week-15/day-107.md
+      - 'Day 108: Financial Services AI': week-15/day-108.md
+      - 'Day 109: Healthcare AI': week-15/day-109.md
+      - 'Day 110: Education AI': week-15/day-110.md
+      - 'Day 111: Vertical Comparison': week-15/day-111.md
+    - 'Week 16 — Advanced MCP & A2A':
+      - week-16/index.md
+      - 'Day 112: MCP Transports & Streamable HTTP': week-16/day-112.md
+      - 'Day 113: MCP OAuth + Multi-tenant': week-16/day-113.md
+      - 'Day 114: MCP Scaling & Ops': week-16/day-114.md
+      - 'Day 115: A2A Protocol Deep': week-16/day-115.md
+      - 'Day 116: A2A Security & Cross-Vendor': week-16/day-116.md
+      - 'Day 117: Build Enterprise MCP (Part 1)': week-16/day-117.md
+      - 'Day 118: Build Enterprise MCP (Part 2)': week-16/day-118.md
+      - 'Day 119: MCP Marketplace Pattern': week-16/day-119.md
+      - 'Day 120: Course Finale + Roadmap': week-16/day-120.md
+  - แหล่งข้อมูล:
+    - resources/prompt-library.md
+    - resources/glossary.md
+    - resources/cheatsheets.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR_USERNAME/claude-mastery
+    - icon: fontawesome/solid/globe
+      link: https://www.anthropic.com
+  generator: false
