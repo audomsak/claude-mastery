@@ -33,10 +33,13 @@ mkdocs serve
 # → http://localhost:8000
 ```
 
-## 🌐 Deploy to GitHub Pages
+## 🌐 GitHub Pages
+
+Live site: **[https://audomsak.github.io/claude-mastery/](https://audomsak.github.io/claude-mastery/)**
+
+To redeploy:
 
 ```bash
-# Edit mkdocs.yml — replace YOUR_USERNAME
 mkdocs gh-deploy
 ```
 
